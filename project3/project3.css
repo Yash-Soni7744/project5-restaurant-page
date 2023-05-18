@@ -1,43 +1,59 @@
-*{
+html,body{
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
 }
 .first-image{
-    height: 100%;
+    min-height: 100%;
+    background-image: url(image1.jpg);
+}
+.second-image{
+    min-height: 100%;
+    background-image: url(image2.jpg);
+}
+.third-image{
+    min-height: 100%;
+    background-image: url(image3.jpg);
+}
+.fourth-image{
+    min-height: 100%;
+    background-image: url(image4.jpg);
+}
+.first-image,.second-image,.third-image,.fourth-image{
     position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-.box{
-    background-color: rgb(50, 47, 47);
-    width: 80px;
-    height: 80px;
-    position: relative;
-    top: 845px;
-    left: 560px;
+    background-attachment: fixed;
 }
 .Parallax{
     position: absolute;
-    top: 300px;
-    left: 540px;
+    text-align: center;
+    top: 50%;
+    left: 500px;
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 40px;
     background-color: rgb(48, 47, 47);
     padding: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 10px;
     transition: 0.7s ease-in-out;
+    text-transform: uppercase;
 }
-p,h1{
+.para1{
     text-align: center;
     position: relative;
-    bottom: 0;
-    color: white;
-    font-size: 25px;
-    background-color: rgb(50, 47, 47);
-    padding: 40px;
+    color: rgb(204, 199, 199);
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgb(50, 47, 47); 
+    font-family: "Lato", sans-serif;
+}
+p{
     text-align: justify;
-    font-family: monospace;
+    font-size: small;
 }
